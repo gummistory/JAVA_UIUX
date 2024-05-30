@@ -1,0 +1,13 @@
+package com.list;
+
+
+@AllArgsConstructor
+
+public class Student {
+
+	String name;
+	int ban;
+	int no;
+	int kor,eng,math;
+	
+}

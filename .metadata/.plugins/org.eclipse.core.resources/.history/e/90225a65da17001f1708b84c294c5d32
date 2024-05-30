@@ -1,0 +1,37 @@
+package com.list;
+
+import java.util.Stack;
+
+public class StackExplore {
+
+	public static Stack back = new Stack();
+	public static Stack forward = new Stack();
+	
+	public static void main(String[] args) {
+		
+		goURL("1.네이트");
+		goURL("2. 네이버");
+		goURL("3. 카카오");
+		goURL("4. 구글");
+		
+		printStatus();
+		goBack();
+	}
+	public static void goURL(String url) {
+		back.push(url);
+		if(! forward.empty()) {
+			forward.clear(); //포워드 스택에 있는 모든 정보 지우기 
+			
+		}
+	}
+	
+	public static void printStatus() {
+		System.out.println("back : "+ back);
+		System.out.println("forward : " + forward);
+	}
+   public static void goBack() {
+	   if(!back.empty()) {
+		   forward.push(back.pop()); //읽어온  데이터를 삭제 
+	   }
+   }
+}

@@ -1,0 +1,19 @@
+package com.list;
+
+import java.util.Arrays;
+import java.util.Comparator;
+
+public class IntegerTest {
+
+	public static void main(String[] args) {
+		// integer
+		class Descending implements IntegerTest{
+		IntegerTest [ ] intg = {new Integer(1), 5, 3, 4, 3};
+		System.out.println(Arrays.toString(intg));
+		
+		Arrays.sort(intg);
+		System.out.println(Arrays.toString(intg));
+		}
+	}
+
+}

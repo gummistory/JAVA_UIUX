@@ -1,0 +1,36 @@
+package com.map;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
+
+public class PropertiesTest2 {
+
+	public static void main(String[] args) {
+		// input.txt 이용
+		
+		Properties prop = new Properties();
+		
+		String inputFile = "src/input.txt";
+		
+		
+		try {
+			prop.load(new FileInputStream(inputFile));
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+			
+		} catch (IOException e) {
+			
+			e.printStackTrace();
+		}
+		
+		System.out.println(prop);
+		String name = prop.getProperty("name");
+		String data = prop.getProperty("data");
+		
+		System.out.println(name);
+
+	}
+
+}

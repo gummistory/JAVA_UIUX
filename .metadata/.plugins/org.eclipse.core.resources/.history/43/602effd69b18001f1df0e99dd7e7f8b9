@@ -1,0 +1,19 @@
+package com.map;
+
+import java.util.HashMap;
+
+public class HashMapTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		HashMap map = new HashMap();
+		map.put("myId","1234");
+		map.put("asdf" , "1111");
+		map.put("asdf" , "1234") ; // 중복시 마지막 값을 사용한다.
+
+		//System.out.println(map);
+	   System.out.println(map.get("myId"));// key를 이용해서 value를 반환한다.
+	}
+
+}

@@ -1,0 +1,24 @@
+import java.util.ArrayList;
+
+// box에 물건을 담는 프로그램 
+
+public class Box <T> {
+
+		ArrayList<T> list = new ArrayList<>();
+		
+		void add(T item) {  // 다형성 적
+			list.add(item);
+		}
+		
+		T get(int i) {
+			return list.get(i);
+		}
+		
+		int size() {
+			return list.size();
+		}
+		
+		public String toStirng() {
+			return list.toString();
+		}
+}

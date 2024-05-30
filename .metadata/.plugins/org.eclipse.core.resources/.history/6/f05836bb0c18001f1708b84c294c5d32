@@ -1,0 +1,21 @@
+package com.set;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class BingoTest {
+
+	public static void main(String[] args) {
+		// 1 ~ 50 난수 중 25개의 숫자를 중복없이 2차원 배열에 저
+
+		Set  set = new HashSet();
+		int[ ][ ] board = new int [5][5];
+		
+		for(int i =1; set.size()<25; i++) {
+			set.add((int)(Math.random()*50)+1);
+		}
+		
+		System.out.println(set);
+	}
+
+}

@@ -1,0 +1,29 @@
+
+public class FruitTest2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		FruitBox<Fruit> fruitBox = new FruitBox<Fruit>();
+		FruitBox<Apple> appleBox = new FruitBox<Apple>();
+		FruitBox<Grape> grapeBox = new FruitBox<Grape>();
+		//FruitBox<Toy>toyBox = new FruitBox<Toy>(); // 불가 ! 타입 불일치( 상속하지 않음) 
+		
+		fruitBox.add(new Fruit());
+		fruitBox.add(new Apple());
+		fruitBox.add(new Grape());
+		appleBox.add(new Apple());
+		// appleBox.add(new Grape()); apple 하고 grape 는 상속관가 아님으로 애플박스에 담길 수 없음 
+		
+		grapeBox.add(new Grape());
+		
+		System.out.println(fruitBox.toStirng());
+		System.out.println(appleBox.toStirng());
+		System.out.println(grapeBox.toStirng());
+		
+	
+		
+ 	}
+
+}

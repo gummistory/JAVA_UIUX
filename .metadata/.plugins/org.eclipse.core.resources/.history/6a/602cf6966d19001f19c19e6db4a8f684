@@ -1,0 +1,4 @@
+
+public class FuitBox extends Box<T> {
+
+}

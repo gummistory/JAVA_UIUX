@@ -1,0 +1,44 @@
+package stream;
+
+public class Student implements Comparable<Student>{
+	// w. StreamTest 4 
+	
+	String name;
+	int ban;
+	int totalScore;
+	
+	public Student(String name, int ban, int totalScore) {
+		super();
+		this.name = name;
+		this.ban = ban;
+		this.totalScore = totalScore;
+	}
+
+	@Override
+	public String toString() {	
+		return "Student [name=" + name + ", ban=" + ban + ", totalScore=" + totalScore + "]";
+		
+	}
+	
+	String getName() {
+		return name;
+	}
+	
+	int getBan() {
+		return ban;
+
+	}
+
+	int getTotalScore() {
+		return totalScore;
+	}
+	@Override
+	public int compareTo(Student s) {
+		return s.totalScore - this.totalScore;			// 총점으로 내림차순 
+	}
+	
+	
+	
+	
+
+}

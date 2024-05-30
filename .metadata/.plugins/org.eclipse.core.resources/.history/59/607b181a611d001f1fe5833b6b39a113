@@ -1,0 +1,21 @@
+package lambdaStream;
+
+import java.util.function.Function;
+
+public class LambdaTest5 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// 람다식에 메소드 참조 방
+		// 람다식이 하나의 메소드 만 호출하는 경우에는 메소드 참조라는 방식으로 호출 할 수 있다 
+		
+		Function<String,Integer> f = s-> Integer.parseInt(s);
+		int i = f.apply("100");
+		System.out.println(i);
+		
+		
+		
+
+	}
+
+}

@@ -1,0 +1,6 @@
+
+public class Aplle extends Fruit {
+	public String toString() {
+		return "Apple";
+	}
+}

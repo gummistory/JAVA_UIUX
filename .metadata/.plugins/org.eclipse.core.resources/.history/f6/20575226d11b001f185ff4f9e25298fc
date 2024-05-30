@@ -1,0 +1,11 @@
+
+public class ThreadEx3_1 {
+
+	
+	for(int i = 0; i<300; i++) {
+		System.out.println("-");
+	}
+	
+	System.out.println("<<th1종료>>");
+}
+}

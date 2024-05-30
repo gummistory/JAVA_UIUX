@@ -1,0 +1,18 @@
+package com.list;
+
+import java.util.Arrays;
+
+public class Integer {
+
+	public static void main(String[] args) {
+		// integer
+		
+		Integer [ ] intg = {new Integer(1), 5, 3, 4, 3};
+		System.out.println(Arrays.toString(intg));
+		
+		Arrays.sort(intg);
+		System.out.println(Arrays.toString(intg));
+
+	}
+
+}

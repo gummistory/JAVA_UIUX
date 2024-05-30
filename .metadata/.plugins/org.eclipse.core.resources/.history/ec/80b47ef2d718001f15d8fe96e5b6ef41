@@ -1,0 +1,12 @@
+package com.bulider;
+
+public class UserInfoLombokTest {
+	
+	public static void main(String[ ] args) {
+		UserInfoLombok userInfoLombok = UserInfoLombok
+				.builder( )
+				.firstName("Lombok 적용");
+			System.out.println(userInfoLombok.getUserInfo());
+	}
+
+}

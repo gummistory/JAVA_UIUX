@@ -1,0 +1,32 @@
+package com.list;
+
+import java.util.Arrays;
+import java.util.Comparator;
+
+
+class Descending implements Comparator{
+
+	@Override
+	public int compare(Object o1, Object o2) {
+		if (o1 instanceof String && o2 instanceof String) {
+	         String s1 = (String) o1;
+	         String s2 = (String) o2;
+	         
+//	        return o1 - o2 // 오름차순
+//	        return 02 - o1 //내림차순
+//	        		
+	       //  return s1.compareTo(s2); // 오름차
+	       //  return s2.compareTo(s1); // 양수 , 0 , 음수 ( 내림차순 ), 
+	         return s1.compareTo(s2)  *  - 1; // 오름차순 방식 * -1 = 내림차순으로 바뀜 
+	      }
+
+	      return -1;
+
+	      Integer [ ] intg = { new Integer(1), 5, 3, 4, 3};
+			System.out.println(Arrays.toString(intg));
+			
+			Arrays.sort(intg);
+			System.out.println(Arrays.toString(intg));
+	}
+	
+}

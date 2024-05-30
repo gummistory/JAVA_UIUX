@@ -1,0 +1,20 @@
+package com.list;
+
+import java.util.Arrays;
+
+public class ComparatorTest {
+
+	public static void main(String[] args) {
+		
+		// 문자열 대소비교 ( 사전의 알파벳 순서 ) 
+		
+		String[ ] strArr = { "cat", "Dog", "lion", "tiger" }; 
+		System.out.println(Arrays.toString(strArr)); // 정렬 전 상태
+		
+		// Arrays 클래스
+		// sort : 오름차순 정렬 
+		Arrays.sort(strArr);
+		System.out.println(Arrays.toString(strArr));
+	}
+
+}

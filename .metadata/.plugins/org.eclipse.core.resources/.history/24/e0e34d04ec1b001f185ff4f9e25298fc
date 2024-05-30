@@ -1,0 +1,19 @@
+
+public class ThreadTest5 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Runimpl5_1 r = new Runimpl5_1();
+		
+		Thread th1 = new Thread(r,"*");
+		Thread th2 = new Thread(r,"**");
+		Thread th3 = new Thread(r,"***");
+		
+		th1.start();
+		th2.start();
+		th3.start();
+
+	}
+
+}

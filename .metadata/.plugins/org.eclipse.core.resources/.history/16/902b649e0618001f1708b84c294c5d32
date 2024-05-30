@@ -1,0 +1,10 @@
+package com.set;
+
+public class HashRandomTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
